@@ -28,9 +28,7 @@ public class PlayerMovement : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
-
         controller.Move(move * speed * Time.deltaTime);
-
         // View bobbing
         if (x != 0 || z != 0)
         {
@@ -43,6 +41,14 @@ public class PlayerMovement : MonoBehaviour
             // If not moving, reset the position to the original
             timer = 0f;
             playerCamera.transform.localPosition = new Vector3(playerCamera.transform.localPosition.x, 0f, playerCamera.transform.localPosition.z);
+
+        }
+    }   
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "Walls")
+        { 
+            Debug.Log("Failed!");
         }
     }
 }
