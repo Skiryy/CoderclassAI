@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 604331074757025631}
   - component: {fileID: 7994085818215245728}
-  - component: {fileID: 8854114528630470175}
+  - component: {fileID: 2755510956845003117}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -241,7 +241,7 @@ Transform:
   m_GameObject: {fileID: 7752629545706836702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.647, y: 1.3566133, z: 1.697}
+  m_LocalPosition: {x: 1.647, y: 3, z: 1.697}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -275,7 +275,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8854114528630470175
+--- !u!114 &2755510956845003117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,11 +284,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7752629545706836702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa57a85fec1475840842f4da0e849513, type: 3}
+  m_Script: {fileID: 11500000, guid: 77fab7f6e022d434589895195dfeb290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 7994085818215245728}
   playerCamera: {fileID: 4786426082114674830}
-  speed: 12
-  bobbingSpeed: 2
-  bobbingAmount: 0.12
+  speed: 6
+  bobbingSpeed: 10
+  bobbingAmount: 0.3
