@@ -45,7 +45,7 @@ public class Flashlightmanager : MonoBehaviour
         {
             currentBattery = 0;
             state = FlashlightState.Dead;
-            flashlightOn = false; // Doet flashlight uit
+            flashlightOn = false;
         }
     }
 
